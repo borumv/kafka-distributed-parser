@@ -6,12 +6,28 @@ This project demonstrates a distributed data processing solution using Apache Ka
 ## 🗂️ Table of Contents 🗂️
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Application architecture](#project-modules)
 - [Project Roadmap and Issues](#project-roadmap-and-issues)
     - [Current Issues](#current-issues)
 - [Getting Started](#getting-started)
     - [Installation](#installation)
     - [Running the Application](#tunning-the-application)
   
+
+
+
+## Features
+
+- Distributed data processing
+- Utilization of Kafka Streams for data aggregation
+- Modular architecture for enhanced scalability
+
+## Technologies Used
+
+- Spring boot
+- Apache Kafka
+- Kafka Streams API
+- Docker (for Kafka server)
 
 ## Project Modules
 
@@ -27,20 +43,6 @@ The `kafka-distributor-split-to-stream` and `kafka-distributor-stream-to-group-b
 
 
 ![Kafka](https://github.com/borumv/kafka-distributed-parser/assets/86356857/8e07aa60-25ba-4929-a65a-e7bdc3d473f9)
-
-## Features
-
-- Distributed data processing
-- Utilization of Kafka Streams for data aggregation
-- Modular architecture for enhanced scalability
-
-## Technologies Used
-
-- Spring boot
-- Apache Kafka
-- Kafka Streams API
-- Docker (for Kafka server)
-
 
 # Project Roadmap and Issues
 
