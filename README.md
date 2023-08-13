@@ -4,14 +4,13 @@
 This project demonstrates a distributed data processing solution using Apache Kafka and its Kafka Streams API. The primary goal is to perform a GroupBy operation on data from a CSV file with two columns.
 
 ## 🗂️ Table of Contents 🗂️
-- [Project Overview](#Overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Project Roadmap and Issues](#Project-Roadmap-and-Issues)
-    - [Current Issues](#Current-Issues)
+- [Project Roadmap and Issues](#project-roadmap-and-issues)
+    - [Current Issues](#current-issues)
 - [Getting Started](#getting-started)
     - [Installation](#installation)
-    - [Running the Application](#Running-the-Application)
+    - [Running the Application](#tunning-the-application)
   
 
 ## Project Modules
@@ -25,6 +24,9 @@ The program is divided into the following modules:
 3. **kafka-distributor-stream-to-group-by**: This module generates the resulting GroupBy using Kafka Streams. It retrieves data from the `stream-input` stream and aggregates the result into the `stream-output` topic. The `kafka-distributer` client module receives the final result from the `stream-output` topic.
 
 The `kafka-distributor-split-to-stream` and `kafka-distributor-stream-to-group-by` modules are designed for extensibility to provide a distributed processing system. This program serves as an example solution to demonstrate distributed processing capabilities.
+
+
+![Kafka](https://github.com/borumv/kafka-distributed-parser/assets/86356857/8e07aa60-25ba-4929-a65a-e7bdc3d473f9)
 
 ## Features
 
@@ -62,5 +64,3 @@ The `kafka-distributor-split-to-stream` and `kafka-distributor-stream-to-group-b
 3. Execute the `kafka-distributor-stream-to-group-by` module.
 4. Launch the `kafka-distributer` module, specifying the path to the CSV file or using the provided example in the `resources` folder.
 
-
-# User Interface Overview
