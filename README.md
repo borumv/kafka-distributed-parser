@@ -11,7 +11,7 @@ This project demonstrates a distributed data processing solution using Apache Ka
     - [Current Issues](#current-issues)
 - [Getting Started](#getting-started)
     - [Installation](#installation)
-    - [Running the Application](#tunning-the-application)
+    - [Running the Application](#running-the-application)
   
 
 
@@ -33,7 +33,7 @@ This project demonstrates a distributed data processing solution using Apache Ka
 
 The program is divided into the following modules:
 
-1. **kafka-distributer**: This module serves as the entry point for our project. Through the command line, we can specify the file for which we want to perform a GroupBy operation. For splitting, we utilize a separate splitter, which can be found in another repository at [link to splitter repository](link-to-splitter-repository).
+1. **kafka-distributer**: This module serves as the entry point for our project. Through the command line, we can specify the file for which we want to perform a GroupBy operation. For splitting, we utilize a separate splitter, which can be found in another repository at [link-to-splitter-repository](https://github.com/borumv/csv_splitter).
 
 2. **kafka-distributor-split-to-stream**: This module is responsible for the distributed reading of a file. It receives messages in the format `{leftIndex:number_left_index, rightIndex:numberIndex, path:pathToFile}` as input and generates messages for the `stream-input` topic.
 
